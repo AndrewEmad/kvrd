@@ -1,31 +1,29 @@
 $(window).ready(function () {
     var video = document.getElementById("myVideo");
     var btn = document.getElementById("myBtn");
-    $('.play').click(function () {
-        if ($('#myVideo').hasClass('opened')) {
-            if (video.paused) {
-                video.play();
-                btn.innerHTML = '<i class="fas fa-pause-circle"></i>'
-
-            } else {
-                video.pause();
-                btn.innerHTML = '<i class="fas fa-play-circle"></i>'
-            }
-        }
-        else {
-            $('#myVideo').addClass('opened');
-            $('.forVideo').css('display', 'none');
-            $('#myVideo').css('display', 'block');
+    $('.myPlay').click(function () {
+        if (video.paused) {
+            video.play();
             btn.innerHTML = '<i class="fas fa-pause-circle"></i>'
-        }
 
+        } else {
+            video.pause();
+            btn.innerHTML = '<i class="fas fa-play-circle"></i>'
+        }
     });
     if (video != null) {
         video.onended = function (e) {
             btn.innerHTML = '<i class="far fa-play-circle"></i>'
         };
     }
-
+    $('.mute a').click(function () {
+        video.muted = !(video.muted);
+        if (video.muted) {
+            document.getElementById('mute').innerHTML = '<i class="fas fa-volume-off"></i>'
+        }
+        else
+            document.getElementById('mute').innerHTML = '<i class="fas fa-volume-up"></i>'
+    });
     // home first slider
     var homeFirstSlider = new Swiper('.home-first-slider', {
         slidesPerView: 1,
@@ -33,7 +31,16 @@ $(window).ready(function () {
             nextEl: '.swiper-button-next.allWordsbtn',
             prevEl: '.swiper-button-prev.allWordsbtn',
         },
+        autoplay: {
+            delay: 5000,
+        },
+        speed: 1000,
     });
+    homeFirstSlider.on('slideChange', function (e) {
+        $('.letterContent').addClass('desc');
+        $('.emptyDiv button').css('display', 'block')
+    });
+    // project PAe sliders
     var designSlider = new Swiper('.design-slider', {
         slidesPerView: 1,
         navigation: {
@@ -53,17 +60,7 @@ $(window).ready(function () {
         observeParents: true,
     });
 
-    $('.flexslider').flexslider({
-        animation: "slide",
-        loop: false,
-        // start: function (slider) {
-        //     $('.flex-active-slide').next().click(function (event) {
-        //         event.preventDefault();
-        //         slider.flexAnimate(slider.getTarget("next"));
-        //     });
-        // }
-    });
-    $('.flex-next').prepend('<span class="mr-3 lightGray">/</span>');
+    var x = 0;
 
     /* add more inputs when clicking new Experience */
     var count = 0;
@@ -71,48 +68,111 @@ $(window).ready(function () {
     var el = document.getElementsByClassName('singleEmployee');
     if (el.length != 0) {
         var data = (document.getElementsByClassName('singleEmployee')[0]).outerHTML;
-        $('.historyBtn').click(function (e) {
-            e.preventDefault();
-            $('.toAppend').append(data);
-            count++;
-            el[count].getElementsByTagName('span')[0].innerText = "Employer " + parseInt(empNo);
-            var input = el[count].getElementsByTagName('input');
-            for (var i = 0; i < input.length; i++) {
-                var attributeName = (input[i].getAttribute('placeholder')).toLowerCase() + parseInt(empNo);
-                input[i].setAttribute('name', attributeName.replace(/\s/g, ''));
+        $('.singleBtn').click(function (e) {
+            if (count < 2) {
+                e.preventDefault();
+                $('.toAppend').append(data);
+                count++;
+                el[count].getElementsByTagName('span')[0].innerText = "Employer " + parseInt(empNo);
+                var input = el[count].getElementsByTagName('input');
+                for (var i = 0; i < input.length; i++) {
+                    var attributeName = (input[i].getAttribute('placeholder')).toLowerCase() + parseInt(empNo);
+                    input[i].setAttribute('name', attributeName.replace(/\s/g, ''));
+                }
+                empNo++;
+                $('.todate').datepicker();
             }
-            empNo++;
+            if (count == 2) {
+                $('.singleBtn').css('display', 'none')
+            }
         });
     }
-
+    / *searchForm*/
     $('.searchIcon').click(function (e) {
+        e.stopPropagation();
         var parent = $(this).parents().eq(2);
         parent.find('.searchForm').css('display', 'inline-block');
+        parent.find('.searchForm').addClass('searchOpened');
         parent.find('.toHide').css('display', 'none');
     });
-    $('.navIcon').click(function () {
-        $('.responsiveMenu').addClass('displayResponsive')
+
+    $(document).click(function () {
+        if ($('.searchForm').hasClass('searchOpened')) {
+            $('.searchForm').css('display', 'none');
+            $('.searchForm').removeClass('searchOpened');
+            $('.toHide').css('display', 'inline-block');
+        }
     });
-    $('.closeSubMenu').click(function () {
-        $('.responsiveMenu').removeClass('displayResponsive')
+
+    $('.searchForm input').click(function (e) {
+        e.stopPropagation();
     });
+    / *searchForm end*/
+
+
+    $('.navIcon .fa-bars').click(function () {
+        // $('header').css('position', 'fixed');
+        $('.responsiveMenu').addClass('displayResponsive');
+        $('header').css('position', 'fixed')
+        $('.navIcon').addClass('displayClose');
+    });
+    //
+    $('.navIcon .closeSubMenu').click(function () {
+        // $('header').css('position', 'relative');
+        if ($(window).width() < 769 ) {
+            $('header').css('position', 'relative');
+        }
+        $('.responsiveMenu').removeClass('displayResponsive');
+        $('.navIcon').removeClass('displayClose');
+    });
+
+
+    var screenSize = window.innerWidth;
+    if (screenSize < 768) {
+        $('.gallery .common').css('display', 'none');
+    }
 
     function activateSlider(clickedIndex) {
         $('.gallery .gallerySlider[data-index=' + clickedIndex + "]").addClass('slider-opened');
-        $('.gallery .common[data-index=' + clickedIndex + "]").css('display', 'block');
+        if (screenSize >= 768) {
+            $('.gallery .common[data-index=' + clickedIndex + "]").css('display', 'block');
+        }
     }
 
     $('.galleryData a').click(function (e) {
         $('.galleryData a i').remove();
         $('.galleryData a').removeClass('mainColor ');
-        $(this).prepend('<i class="fas fa-caret-right m-0"></i>');
+        $(this).prepend('<i class="fas fa-caret-right"></i>');
         $(this).addClass('mainColor ');
         var clickedIndex = $(this).attr('data-index');
-        var openedIndex = $('.gallery .slider-opened').attr('data-index')
+        var openedIndex = $('.gallery .slider-opened').attr('data-index');
         if (clickedIndex != openedIndex) {
             $('.gallery .slider-opened').removeClass('slider-opened');
             $('.gallery .common').css('display', 'none');
             activateSlider(clickedIndex);
         }
     });
+
+    $('.sub-menu .current-menu-item').addClass('head');
+    $('.sub-menu .current-menu-item').prepend('<i class="fas fa-angle-right mainColor"></i>')
+
+    $('.subVideo .video-play').click(function () {
+
+        var video = document.getElementById("myVideo2");
+
+        video.src = this.dataset.url;
+        console.log(video.src)
+        $('.pop-up').show();
+        if (video.paused) {
+            video.play();
+        }
+    });
+
+    $('.closeMyPopup').click(function (e) {
+        $('.pop-up').css('display', 'none');
+        if ($(this).parents().eq(1).find('video').length == 1) {
+            var video = document.getElementById("myVideo2");
+            video.pause();
+        }
+    })
 });

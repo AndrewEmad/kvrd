@@ -78,5 +78,29 @@ $(document).ready(function () {
         }
     });
 
+    $('.singleGalley').click(function () {
+        $('.galleryPopUp').css({
+            'opacity': 1,
+            'z-index': 999
+        });
+
+        $('.popup-slider').flexslider({
+            animation: "slide",
+            slideshow: false,
+            minItems: 1,
+            start: function () {
+                var totalSlides = $('.popup-slider .flex-control-nav li').length;
+                $('.galleryPopUp .total').text(totalSlides);
+                $('.galleryPopUp .flex-prev').append('<i style="margin-left: 8px; color: #99999A">/</i>');
+            },
+            after: function () {
+                var currentIndex = $('.popup-slider li:has(.flex-active)').index('.flex-control-nav li') + 1;
+                $('.galleryPopUp .current').text(currentIndex + ' / ')
+            }
+        });
+    })
+
+
+
 });
 
