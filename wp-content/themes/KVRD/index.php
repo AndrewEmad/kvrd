@@ -92,6 +92,34 @@
 
 <?php } ?>
 
+<!-- Projects Slider Section -->
 
+<section class="mrg-hr-130 projectWrapper">
+    <div class="myContainer  common-slider-btn position-relative">
+        <div class="mrg-btm-xg">
+            <p class="mainColor f-lg text-uppercase">OUR</p>
+            <p class="mainColor f-lg text-uppercase">Projects</p>
+        </div>
+
+        <div class="flexConatiner projects-slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <?php $pod = pods('project',array('limit' => 5));
+                    if($pod) {
+                        while ($pod->fetch()) {?>
+                            <li>
+                                <div class="test">
+                                    <img src="<?php echo get_the_post_thumbnail_url($pod->field('id'),'kv_slider_small' )?>" alt="">
+                                </div>
+                                <p class="text-uppercase mainColor f-lg finalName"><?php echo $pod->field('title') ?></p>
+                            </li>
+                        <?php }
+                    }
+                    ?>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php get_footer() ?>

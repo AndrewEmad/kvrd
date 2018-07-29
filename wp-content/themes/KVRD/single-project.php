@@ -1,4 +1,19 @@
-<?php get_header() ?>
+<?php get_header() ;
+global $post;
+$project = pods( $post->post_type, $post->ID );
+?>
+
+<section style="background-image: url('<?php echo pods_image_url($project->field('cover')['guid'],'kv_project_cover');?>'); background-size: cover; background-position: top" class="firstSection">
+    <div class="myContainer position-relative">
+        <div class="mainColorBg position-absolute commonDiv">
+            <h1 class="white letter-4"><?php echo $project->field('title')?></h1>
+            <div class="smallHr"></div>
+            <p class="f-18 white desc letter-4 twoLines col-10">
+                <?php echo $project->field('excerpt') ?>
+            </p>
+        </div>
+    </div>
+</section>
 <section class="projectPage p-ver-40">
     <div class="myContainer">
         <div class="clearfix d-flex flex-column d-md-block">
@@ -8,16 +23,10 @@
             </p>
             <div class="smallHr mainColorBg"></div>
             <p class="mainColor aperturaRegular target order-3">
-                It is a long established fact that a reader will be distracted by the readable content of a page
-                when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                distribution of letters, as opposed to using ‘Content here, content here’, making it look like
-                readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their
-                infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                (injected humour and the like).
+                <?php echo $project->field('why_use') ?>
             </p>
             <div class="projectImage centerImg-md">
-                <img src="images/bottomImg.png" alt="">
+                <img src="<?php echo pods_image_url($project->field('usage_photo'),'kv_knowledge_large') ?>" alt="">
             </div>
         </div>
     </div>
@@ -27,19 +36,18 @@
     <div class="map">
         <div class="myContainer position-relative">
             <div class="overMap mainColorBg">
+                <div id="map"></div>
                 <p class="f-lg aperturaRegular mb-2">
                     LOCATION
                 </p>
                 <p class="f-md aperturaRegular mb-4">
-                    KVRD. California
-                    34 Tesla, Ste 100
-                    Irvine, Ca, USA 92618
+                    <?php echo $project->field('address') ?>
                 </p>
                 <p class="aperturaBold f-md mb-2">
                     For and information:
                 </p>
                 <p class="f-md aperturaRegular">
-                    +201093057429
+                    <?php echo $project->field('phone') ?>
                 </p>
             </div>
         </div>
@@ -50,14 +58,13 @@
     <div class="myContainer">
         <span class="f-lg mainColor aperturaRegular letter-4">FLOOR PLAN</span>
         <div class="smallHr mainColorBg m-auto"></div>
-        <p class="f-normal mainColor aperturaRegular letter-4">It is a long established fact that a reader will be
-            distracted by the readable content of a page when looking at
-            its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-            opposed to using ‘Content here, </p>
-        <button class="mainColorBg f-normal">
+        <p class="f-normal mainColor aperturaRegular letter-4">
+            <?php echo $project->field('floor_plan') ?>
+        </p>
+        <button class="mainColorBg f-normal" onclick="window.open('<?php echo $project->field('floor_plan_file')['guid'] ?>', '_blank')">
             Floor Plan
         </button>
-        <button class="mainColorBg f-normal">
+        <button class="mainColorBg f-normal" onclick="window.open('<?php echo $project->field('brochure')['guid'] ?>', '_blank')">
             Brochure
         </button>
     </div>
@@ -79,45 +86,31 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-9">
+            <?php $photos = $project->field('project_design_photos');?>
 
+            <div class="col-lg-9">
                 <div class="swiper-container design-slider gallerySlider slider-opened" data-index="1">
                     <div class="swiper-wrapper">
+                    <?php foreach($photos as $photo){ ?>
                         <div class="swiper-slide">
                             <div class="centerImg-md">
-                                <img src="images/design.png" alt="">
+                                <img src="<?php echo pods_image_url($photo['guid'],'kv_slider_small') ?>" alt="">
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="centerImg-md">
-                                <img src="images/design.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="centerImg-md">
-                                <img src="images/design.png" alt="">
-                            </div>
-                        </div>
-
+                    <?php } ?>
                     </div>
                 </div>
+                <?php $photos = $project->field('construction_progress_photos');?>
+
                 <div class="swiper-container construction-slider gallerySlider" data-index="2">
                     <div class="swiper-wrapper">
+                        <?php foreach($photos as $photo){ ?>
                         <div class="swiper-slide">
                             <div class="centerImg-md">
-                                <img src="images/unique.png" alt="">
+                                <img src="<?php echo pods_image_url($photo['guid'],'kv_slider_small') ?>" alt="">
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="centerImg-md">
-                                <img src="images/unique.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="centerImg-md">
-                                <img src="images/unique.png" alt="">
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
 
@@ -138,7 +131,7 @@
 <section class="details">
     <div class="myContainer">
         <p class="aperturaRegular f-lg mainColor">More Details</p>
-        <form action="">
+        <form action="" id="kv_more_details">
             <div class="row justify-content-center">
                 <div class="form-group">
                     <input type="text" placeholder="Name" class="form-control">
@@ -147,13 +140,34 @@
                     <input type="email" placeholder="Email" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="text" placeholder="Phone Number" class="form-control">
+                    <input placeholder="Phone Number" class="form-control"
+                           type="tel" id="phone" name="phone" pattern="[0-9]{11}" required="required" />
                 </div>
-                <button class="mainColorBg white">
+                <button type='submit' class="mainColorBg white">
                     Brochure
                 </button>
             </div>
         </form>
     </div>
 </section>
+<script>
+    <?php $location = get_field('location', $project->field('id')); ?>
+    function initMap() {
+        var myLatLng = {lat: <?php echo $location['lat'] ?>, lng: <?php echo $location['lng'] ?>};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 18,
+            center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Location'
+        });
+        marker.setMap(map);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmvCRg5qCb4wZUD4WvrDdyD1IYp_zsihE&callback=initMap"
+        async defer></script>
 <?php get_footer() ?>

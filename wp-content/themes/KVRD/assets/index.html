@@ -16,7 +16,6 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/version4.js"></script>
 </head>
 <body>
 <header>
@@ -58,7 +57,6 @@
         <div class="myContainer clearfix position-relative">
             <a href="javascript:(void(0))" class="float-left navIcon">
                 <i class="fas fa-bars mainColor f-18"></i>
-                <i class="fas fa-times f-20 mainColor mainHover closeSubMenu"></i>
             </a>
             <ul class="float-left d-in-large">
                 <li class="text-uppercase d-inline-block">
@@ -92,7 +90,7 @@
                     </a>
                 </li>
             </ul>
-            <div class="chat mainColorBg float-right d-flex justify-content-center align-items-center">
+            <div class="chat mainColorBg float-right d-flex justify-content-center align-items-center position-absolute">
                 <a href="">
                     <i class="fas fa-comment mr-1"></i>
                     LIVE CHAT
@@ -103,71 +101,69 @@
 
 </header>
 <div class="responsiveMenu whiteBg position-fixed">
-    <!--<div class="top clearfix px-4 borderBottom d-flex align-items-center">-->
-    <!--<a href="" class="float-left">-->
-    <!--<img src="images/logo.png" alt="" class="logo">-->
-    <!--</a>-->
-    <!--<form action="" class="position-relative searchForm float-right ml-auto">-->
-    <!--<input type="text" placeholder="Search">-->
-    <!--<button class="position-absolute">-->
-    <!--<i class="fas fa-search mainColor"></i>-->
-    <!--</button>-->
-    <!--</form>-->
-    <!--<div class="float-right toHide ml-auto">-->
-    <!--<div class="socialIcons d-inline-block">-->
-    <!--<a href="#" class="">-->
-    <!--<i class="fab fa-linkedin"></i>-->
-    <!--</a>-->
-    <!--<a href="#" class="">-->
-    <!--<i class="fab fa-instagram"></i>-->
-    <!--</a>-->
-    <!--<a href="#" class="active">-->
-    <!--<i class="fab fa-twitter"></i>-->
-    <!--</a>-->
-    <!--<a href="#" class="">-->
-    <!--<i class="fab fa-facebook-square"></i>-->
-    <!--</a>-->
-    <!--</div>-->
-    <!--<span class="mainColor f-20 mr-2">|</span>-->
-    <!--<a href="javascript:void(0)" class="mainColor mainHover searchIcon">-->
-    <!--<i class="fas fa-search"></i>-->
-    <!--</a>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="px-4 clearfix borderBottom">-->
-    <!--<a href="javascript:void(0)" class="f-20 mainColor d-inline-block mainHover closeSubMenu">-->
-    <!--<i class="fas fa-times"></i>-->
-    <!--</a>-->
-    <!--<div class="chat mainColorBg float-right d-flex justify-content-center align-items-center">-->
-    <!--<a href="">-->
-    <!--<i class="fas fa-comment mr-1"></i>-->
-    <!--LIVE CHAT-->
-    <!--</a>-->
-    <!--</div>-->
-    <!--</div>-->
-    <div class="myContainer">
-        <div class="px-4">
-            <ul>
-                <li>
-                    <a href="" class="mainHover">KVRD</a>
-                </li>
-                <li>
-                    <a href="" class="mainHover">OUR PROJECTS</a>
-                </li>
-                <li>
-                    <a href="" class="mainHover">PROPERTY INQUIRIES</a>
-                </li>
-                <li>
-                    <a href="" class="mainHover">Media MEDIA CENTER</a>
-                </li>
-                <li>
-                    <a href="" class="mainHover">CAREERS</a>
-                </li>
-                <li>
-                    <a href="" class="mainHover">CONTACT US</a>
-                </li>
-            </ul>
+    <div class="top clearfix px-4 borderBottom d-flex align-items-center">
+        <a href="" class="float-left">
+            <img src="images/logo.png" alt="" class="logo">
+        </a>
+        <form action="" class="position-relative searchForm float-right ml-auto">
+            <input type="text" placeholder="Search">
+            <button class="position-absolute">
+                <i class="fas fa-search mainColor"></i>
+            </button>
+        </form>
+        <div class="float-right toHide ml-auto">
+            <div class="socialIcons d-inline-block">
+                <a href="#" class="">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="active">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </div>
+            <span class="mainColor f-20 mr-2">|</span>
+            <a href="javascript:void(0)" class="mainColor mainHover searchIcon">
+                <i class="fas fa-search"></i>
+            </a>
         </div>
+    </div>
+    <div class="px-4 clearfix borderBottom">
+        <a href="javascript:void(0)" class="f-20 mainColor d-inline-block mainHover closeSubMenu">
+            <i class="fas fa-times"></i>
+        </a>
+        <div class="chat mainColorBg float-right d-flex justify-content-center align-items-center">
+            <a href="">
+                <i class="fas fa-comment mr-1"></i>
+                LIVE CHAT
+            </a>
+        </div>
+    </div>
+    <div class="px-4">
+        <ul>
+            <li>
+                <a href="" class="mainHover">KVRD</a>
+            </li>
+            <li>
+                <a href="" class="mainHover">OUR PROJECTS</a>
+            </li>
+            <li>
+                <a href="" class="mainHover">PROPERTY INQUIRIES</a>
+            </li>
+            <li>
+                <a href="" class="mainHover">Media MEDIA CENTER</a>
+            </li>
+            <li>
+                <a href="" class="mainHover">CAREERS</a>
+            </li>
+            <li>
+                <a href="" class="mainHover">CONTACT US</a>
+            </li>
+        </ul>
     </div>
 </div>
 <section class="home-1 position-relative">
@@ -301,7 +297,7 @@
                     US UNIQUE?</p>
                 <div class="smallHr mainColorBg d-none d-md-block"></div>
                 <div class="toChangePos">
-                    <p class="f-md mainColor twoLines letter-4">Our core strength lies in KVRD’s Research Foundation that
+                    <p class="f-md mainColor twoLines">Our core strength lies in KVRD’s Research Foundation that
                         works around the clock to seize every
                         opportunity to develop beJer integrated communities through practical research, on-going educational
                         programs and outreach activities that aim at supporting each of our real estate developments by
@@ -311,7 +307,7 @@
                         ensuring they make the best choices that best suit their investment needs, but also guarantee
                         remarkable
                         outcomes at all times</p>
-                    <button class="mainColor f-18 border-0 letter-4 p-3 whiteBg d-none d-md-block">
+                    <button class="mainColor f-18 border-0 letter-4 p-3 whiteBg">
                         READ MORE
                     </button>
                 </div>
@@ -332,14 +328,35 @@
         <div class="flexConatiner projects-slider">
             <div class="flexslider">
                 <ul class="slides">
-                    <li><img src="images/projectSidewalk.png" alt=""></li>
-                    <li><img src="images/projectSidewalk.png" alt=""></li>
-                    <li><img src="images/projectSidewalk.png" alt=""></li>
-                    <li><img src="images/projectSidewalk.png" alt=""></li>
+                    <li>
+                        <div class="test">
+                            <img src="images/projectSidewalk.png" alt="">
+                        </div>
+                        <p class="text-uppercase mainColor f-lg finalName">SIDEWALK</p>
+                    </li>
+                    <li>
+                        <div class="test">
+                            <img src="images/projectSidewalk.png" alt="">
+                        </div>
+                        <p class="text-uppercase mainColor f-lg finalName">BOLARIS</p>
+
+                    </li>
+                    <li>
+                        <div class="test">
+                            <img src="images/projectSidewalk.png" alt="">
+                        </div>
+                        <p class="text-uppercase mainColor f-lg finalName">SIDEWALK</p>
+                    </li>
+                    <li>
+                        <div class="test">
+                            <img src="images/projectSidewalk.png" alt="">
+                        </div>
+                        <p class="text-uppercase mainColor f-lg finalName">BOLARIS</p>
+
+                    </li>
                 </ul>
             </div>
         </div>
-        <p class="text-uppercase mainColor f-lg finalName">SIDEWALK</p>
     </div>
 </section>
 <footer>

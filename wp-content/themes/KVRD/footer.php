@@ -20,8 +20,8 @@
             <div class="d-inline-block footerElem ">
                 <p class="f-18 font-weight-bold white">FOR NEWSLETTER</p>
                 <div class="smallHr mt-3 mb-2"></div>
-                <form action="" class="position-relative">
-                    <input type="text" placeholder="your email" class="letter-4 border-0">
+                <form id="kv_subscribe" action="" class="position-relative">
+                    <input type="email" placeholder="your email" class="letter-4 border-0" required="required">
                     <button class="position-absolute border-0 ">
                         <i class="fas fa-arrow-right white"></i>
                     </button>

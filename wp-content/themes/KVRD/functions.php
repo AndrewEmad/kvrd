@@ -67,3 +67,123 @@ function kv_theme_setup(){
     add_image_size( 'kv_video_cover', '904', '330' ,true );
 }
 add_action('after_setup_theme','kv_theme_setup');
+
+
+/*
+ * Enqueue scripts for subscribe
+ * Author: Andrew Emad
+ */
+function kv_subscribe_scripts() {
+
+    wp_register_script( 'kv_subscribe', get_template_directory_uri() . '/assets/js/subscribe.js' );
+    wp_localize_script( 'kv_subscribe', 'subscribe_params', array(
+        'ajaxurl'   => site_url() . '/wp-admin/admin-ajax.php' // WordPress AJAX
+
+    ) );
+    wp_enqueue_script( 'kv_subscribe' );
+}
+add_action('wp_enqueue_scripts','kv_subscribe_scripts');
+
+
+/*
+ * Handler for subscribe
+ * Author: Andrew Emad
+ */
+function kv_subscribe_handler(){
+
+    $response = array(
+        'status'    => 'succeed',
+        'message'   => 'Thank you for subscribing KVRD.'
+    );
+
+    if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+        $respone['status'] = 'failed';
+        $response['message'] = "Please enter a valid email address";
+        die(json_encode($response));
+    }
+
+    global $wpdb,$table_prefix;
+    $status = $wpdb->insert($table_prefix.'mailpoet_subscribers',array(
+        'first_name'            => ' ',
+        'last_name'             => ' ',
+        'email'                 => $_POST['email']
+    ));
+    if($status === false){
+        $respone['status'] = 'failed';
+        $response['message'] = "Please Try again later !";
+    }
+    die(json_encode($response));
+}
+add_action('wp_ajax_subscribe', 'kv_subscribe_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_subscribe', 'kv_subscribe_handler'); // wp_ajax_nopriv_{action}
+
+
+/*
+ * Enqueue scripts for subscribe
+ * Author: Andrew Emad
+ */
+function kv_project_details_scripts() {
+
+    wp_register_script( 'kv_details', get_template_directory_uri() . '/assets/js/project_details.js' );
+    wp_localize_script( 'kv_details', 'project_details_params', array(
+        'ajaxurl'   => site_url() . '/wp-admin/admin-ajax.php' // WordPress AJAX
+    ) );
+    wp_enqueue_script( 'kv_details' );
+}
+add_action('wp_enqueue_scripts','kv_project_details_scripts');
+
+
+/*
+ * Handler for subscribe
+ * Author: Andrew Emad
+ */
+function kv_project_details_handler(){
+
+    $response = array(
+        'status'    => 'succeed',
+        'message'   => 'Thank you. We will send an email to you with additional details.'
+    );
+
+    if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+        $respone['status'] = 'failed';
+        $response['message'] = "Please enter a valid email address";
+        die(json_encode($response));
+    }
+    if(!preg_match("/^[0-9]{11}$/", $_POST['phone'])) {
+        $respone['status'] = 'failed';
+        $response['message'] = "Please enter a valid phone number";
+        echo json_encode($response);
+        return;
+    }
+
+    if(!wp_mail('andrewen2010@yahoo.com','Project Details',
+        '<div><span>Name: </span><span>'.$_POST['name'].'</span></div>'.
+        '<div><span>Email: </span><span>'.$_POST['email'].'</span></div>'.
+        '<div><span>Phone: </span><span>'.$_POST['phone'].'</span></div>'
+        )){
+        $response = array(
+            'status'    => 'failed',
+            'message'   => 'Error ! Please try again later !'
+        );
+    }
+    die(json_encode($response));
+}
+add_action('wp_ajax_project_details', 'kv_project_details_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_project_details', 'kv_project_details_handler'); // wp_ajax_nopriv_{action}
+
+
+function mail_content_type(){
+    return "text/html";
+}
+add_filter( 'wp_mail_content_type','mail_content_type' );
+
+function my_acf_google_map_api($api)
+{
+
+    $api['key'] = 'AIzaSyDmvCRg5qCb4wZUD4WvrDdyD1IYp_zsihE';
+
+    return $api;
+
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

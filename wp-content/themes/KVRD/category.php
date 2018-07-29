@@ -12,18 +12,20 @@
         <div class="myContainer">
             <p class="text-center text-md-right mrg-btm-xg">
 
-                <?php $args = array(
-                    'child_of'            => 0,
-                    'current_category'    => get_query_var('cat'),
-                    'echo'                => 0,
-                    'exclude'             => '1',
-                    'hide_empty'          => 0,
-                    'separator'           => ' | ',
-                    'style'               => '',
-                    'title_li'            => ''
-                );
-                $output = wp_list_categories($args);
-                echo substr( $output, 0, sizeof($output) - 6);
+                <?php
+                    $args = array('exclude' => '1','hide_empty' => 0);
+                    $categories = get_categories($args);
+                    $size = sizeof($categories);
+                    $menu='';
+                    foreach($categories as $category) {
+                        $size--;
+                        $menu .= '<a href = "'.get_category_link($category->cat_ID).'" class="' . ($category->cat_ID == get_query_var('cat')?'active':'') . '">' . $category->name . '</a>';
+                        if($size!=0){
+                            $menu .= " | ";
+                        }
+                    }
+
+                echo $menu;
                 ?>
             </p>
 <?php

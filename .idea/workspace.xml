@@ -3,44 +3,146 @@
   <component name="ChangeListManager">
     <list default="true" id="fcc4478b-5945-4f65-bcc2-a04abaee8a38" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/application.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/application.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/article details.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/article details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/carrers.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/carrers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/essence beyond.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/essence beyond.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/Pods.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/Pods.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsAPI.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsAPI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsComponents.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsComponents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsData.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsInit.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsInit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsMeta.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsMeta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsMigrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsMigrate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsUI.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsUI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsView.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/PodsView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/fields/code.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/fields/code.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/fields/file.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/fields/file.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/fields/pick.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/fields/pick.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/fields/time.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/fields/time.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/classes/fields/wysiwyg.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/classes/fields/wysiwyg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/components/Advanced-Relationships.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/components/Advanced-Relationships.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/components/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/components/Helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/components/Migrate-Packages/Migrate-Packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/components/Migrate-Packages/Migrate-Packages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/components/Roles/Roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/components/Roles/Roles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/components/Roles/ui/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/components/Roles/ui/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/components/Templates/Templates.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/components/Templates/Templates.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/components/Templates/includes/element-view_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/components/Templates/includes/element-view_template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/components/Templates/includes/functions-view_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/components/Templates/includes/functions-view_template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/deprecated/classes/Pods.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/deprecated/classes/Pods.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/deprecated/list_filters.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/deprecated/list_filters.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/includes/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/includes/data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/includes/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/includes/general.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/includes/media.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/includes/media.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/phpcs-report-full.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/phpcs-report-full.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/phpcs-report-source.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/phpcs-report-source.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/sql/update-2.0-beta.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/sql/update-2.0-beta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/sql/upgrade/PodsUpgrade.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/sql/upgrade/PodsUpgrade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/ui/admin/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/ui/admin/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/ui/admin/setup-edit-field-fluid.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/ui/admin/setup-edit-field-fluid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/ui/admin/setup-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/ui/admin/setup-edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/ui/admin/shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/ui/admin/shortcode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/ui/admin/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/ui/admin/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/ui/fields/attachment.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/ui/fields/attachment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/ui/fields/date.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/ui/fields/date.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/ui/fields/datetime.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/ui/fields/datetime.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/ui/fields/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/ui/fields/slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/ui/fields/time.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/ui/fields/time.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/pods/ui/front/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/pods/ui/front/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/common.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/common.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/flexslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/flexslider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/fontawesome-all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/fontawesome-all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/fonts/flexslider-icon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/fonts/flexslider-icon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/fonts/flexslider-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/fonts/flexslider-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/fonts/flexslider-icon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/fonts/flexslider-icon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/fonts/flexslider-icon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/fonts/flexslider-icon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/swiper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/swiper.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/Apertura-Bold.eot" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/Apertura-Bold.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/Apertura-Bold.otf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/Apertura-Bold.otf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/Apertura-Bold.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/Apertura-Bold.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/Apertura-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/Apertura-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/Apertura-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/Apertura-Bold.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/preview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Bold/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/Apertura-Medium.eot" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/Apertura-Medium.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/Apertura-Medium.otf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/Apertura-Medium.otf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/Apertura-Medium.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/Apertura-Medium.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/Apertura-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/Apertura-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/Apertura-Medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/Apertura-Medium.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/preview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Medium/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/Apertura-Regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/Apertura-Regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/Apertura-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/Apertura-Regular.otf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/Apertura-Regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/Apertura-Regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/Apertura-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/Apertura-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/Apertura-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/Apertura-Regular.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/preview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Apertura-Regular/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Gibson-Regular.zip" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/Gibson-Regular.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.otf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/preview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/MyriadPro-Regular/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/gibson-Regular/gibson-Regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/gibson-Regular/gibson-Regular.eot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/gibson-Regular/gibson-Regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/gibson-Regular/gibson-Regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/gibson-Regular/gibson-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/gibson-Regular/gibson-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/gibson-Regular/gibson-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/gibson-Regular/gibson-Regular.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/gibson-Regular/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/gibson-Regular/preview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/gibson-Regular/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/fonts/gibson-Regular/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/bottomImg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/bottomImg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/carrers.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/carrers.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/design.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/design.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/down.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/knwoledge.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/knwoledge.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/polaris.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/polaris.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/polarisLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/polarisLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/projectSidewalk.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/projectSidewalk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/secondSlider.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/secondSlider.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/sideWalk.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/sideWalk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/sideWalkLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/sideWalkLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/singleProject.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/singleProject.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/thirdSlider.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/thirdSlider.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/unique.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/unique.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/valentine.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/valentine.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/video.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/video.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/vision.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/images/vision.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/bootstrap.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/jquery-3.3.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/jquery.flexslider-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/jquery.flexslider-min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/swiper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/swiper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/version4.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/version4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/media center.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/media center.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/mission vision.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/mission vision.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/no available albums.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/no available albums.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/our story.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/our story.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/ourProjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/ourProjects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/projectPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/projectPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/vacancies.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/vacancies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-brands-400.eot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-regular-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-regular-400.eot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-regular-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-solid-900.eot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/page-projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/page-projects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/assets/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/KVRD/single-project.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/KVRD/single-project.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,44 +153,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="category.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/category.php">
+      <file leaf-file-name="media center.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/assets/media center.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="44" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="44" />
+            <state relative-caret-position="820">
+              <caret line="130" column="16" selection-start-line="130" selection-end-line="131" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="60" column="36" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-media.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/page-media.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
               <folding>
-                <element signature="e#89#211#0#HTML" expanded="true" />
+                <element signature="e#221#370#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="single-project.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/single-project.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="158" column="16" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="16" />
+            <state relative-caret-position="185">
+              <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="projectPage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/assets/projectPage.html">
+      <file leaf-file-name="single_gallery.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/template-parts/single_gallery.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="341" column="10" lean-forward="true" selection-start-line="184" selection-start-column="10" selection-end-line="341" selection-end-column="10" />
+            <state relative-caret-position="54">
+              <caret line="3" column="125" lean-forward="true" selection-start-line="3" selection-start-column="120" selection-end-line="3" selection-end-column="125" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page-projects.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/page-projects.php">
+      <file leaf-file-name="subgallery.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/template-parts/subgallery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="125" selection-start-line="3" selection-start-column="125" selection-end-line="3" selection-end-column="125" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="482">
-              <caret line="43" column="14" selection-start-line="30" selection-end-line="43" selection-end-column="14" />
-              <folding>
-                <element signature="e#109#231#0#HTML" expanded="true" />
-              </folding>
+              <caret line="2510" column="24" selection-start-line="2510" selection-start-column="24" selection-end-line="2510" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -98,7 +224,17 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>email</find>
+      <find>projects-slider</find>
+      <find>.projectWrapper .finalName</find>
+      <find>.projectWrapper p</find>
+      <find>.projectWrapper .flex-direction-nav a</find>
+      <find>myV</find>
+      <find>chat</find>
+      <find>current_ca</find>
+      <find>acti</find>
       <find>curre</find>
+      <find>mobi</find>
+      <find>ga</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,10 +245,7 @@
       <list>
         <option value="$PROJECT_DIR$/wp-content/themes/KVRD/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/KVRD/searchform.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/KVRD/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/KVRD/navwalker.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/KVRD/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/KVRD/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/KVRD/assets/index.html" />
         <option value="$PROJECT_DIR$/wp-content/themes/KVRD/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/KVRD/page-careers.php" />
@@ -120,8 +253,19 @@
         <option value="$PROJECT_DIR$/wp-content/themes/KVRD/template-parts/project.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/KVRD/template-parts/projects-header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/KVRD/page-projects.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/KVRD/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/KVRD/category.php" />
+        <option value="$PROJECT_DIR$/wp-includes/category-template.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/KVRD/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/subscribe.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/project_details.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/KVRD/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/KVRD/single-project.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/KVRD/page-media.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/KVRD/template-parts/single_gallery.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/KVRD/template-parts/subgallery.php" />
       </list>
     </option>
   </component>
@@ -182,6 +326,14 @@
               <item name="KVRD" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="kvrd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kvrd" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="KVRD" type="462c0819:PsiDirectoryNode" />
+              <item name="template-parts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -190,10 +342,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/subscribe.js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/subscribe.js" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/KVRD/assets/js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wp-content/themes/KVRD" />
     </key>
@@ -221,18 +378,19 @@
       <option name="presentableId" value="Default" />
       <updated>1532438850124</updated>
       <workItem from="1532438851370" duration="3655000" />
-      <workItem from="1532501311605" duration="26844000" />
+      <workItem from="1532501311605" duration="26996000" />
+      <workItem from="1532850458954" duration="23433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30499000" />
+    <option name="totallyTimeSpent" value="54084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25338647" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21752988" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -255,23 +413,23 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24940239" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="6" />
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +441,43 @@
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$</wordpressPath>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/assets/projectPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6138">
+          <caret line="341" column="10" lean-forward="true" selection-start-line="184" selection-start-column="10" selection-end-line="341" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/page-projects.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="14" selection-start-line="30" selection-end-line="43" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/single-project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2844">
+          <caret line="158" column="16" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -347,34 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/assets/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -433,10 +599,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/template-parts/projects-header.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/template-parts/projects-header.php" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="252">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/assets/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="360" column="10" selection-start-line="319" selection-start-column="10" selection-end-line="360" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/category-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="601" column="9" lean-forward="true" selection-start-line="601" selection-start-column="9" selection-end-line="601" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -444,43 +635,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
           <caret line="43" column="14" selection-start-line="30" selection-end-line="43" selection-end-column="14" />
-          <folding>
-            <element signature="e#109#231#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/category-template.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/subscribe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="1100" column="58" selection-start-line="1100" selection-start-column="53" selection-end-line="1100" selection-end-column="58" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="15" column="25" selection-start-line="15" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/assets/projectPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="341" column="10" lean-forward="true" selection-start-line="184" selection-start-column="10" selection-end-line="341" selection-end-column="10" />
+        <state relative-caret-position="395">
+          <caret line="184" column="10" selection-start-line="168" selection-start-column="6" selection-end-line="184" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/category.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/assets/js/project_details.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="44" />
-          <folding>
-            <element signature="e#89#211#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/single-project.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="27" selection-start-line="38" selection-end-line="39" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
-          <caret line="158" column="16" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="16" />
+          <caret line="2510" column="24" selection-start-line="2510" selection-start-column="24" selection-end-line="2510" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/assets/media center.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="130" column="16" selection-start-line="130" selection-end-line="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="60" column="36" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/page-media.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding>
+            <element signature="e#221#370#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/template-parts/single_gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="125" lean-forward="true" selection-start-line="3" selection-start-column="120" selection-end-line="3" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/KVRD/template-parts/subgallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="125" selection-start-line="3" selection-start-column="125" selection-end-line="3" selection-end-column="125" />
         </state>
       </provider>
     </entry>

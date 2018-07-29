@@ -1,7 +1,9 @@
 $(window).ready(function () {
     var video = document.getElementById("myVideo");
     var btn = document.getElementById("myBtn");
-    $('.myPlay').click(function () {
+    $('.play').click(function () {
+        $('.forVideo').css('display', 'none');
+        $('.myVideo').css('display', 'block');
         if (video.paused) {
             video.play();
             btn.innerHTML = '<i class="fas fa-pause-circle"></i>'
@@ -176,3 +178,8 @@ $(window).ready(function () {
         }
     })
 });
+$(document).ready(function(){
+$('.flexslider').flexslider({
+       animation: "slide",
+       loop: false,
+   });});
