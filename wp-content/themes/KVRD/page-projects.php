@@ -27,18 +27,16 @@
                 ?>
             </p>
 <?php
-$projects = pods('project',array('limit'      => 3));
-$cnt = 0;
+$projects = pods('project',array('limit'      => 2));
 if($projects->total()>0) {
-    while ($projects->fetch() && $cnt<2) {
+    while ($projects->fetch()) {
         $GLOBALS['pods'] = $projects;
         get_template_part('template-parts/project');
     }
 }
-if($projects->total() > 2){
+if($projects->total_found() > 2){
 ?>
-
-    <button class="commonButton white mainColorBg border-0 mx-auto aperturaRegular">
+    <button class="commonButton white mainColorBg border-0 mx-auto aperturaRegular" data-page="2" onclick="moreProjects.call(this)">
         More
     </button>
     <?php } ?>

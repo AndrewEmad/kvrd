@@ -18,23 +18,17 @@
 <section class="p-ver-40">
     <div class="myContainer">
         <div class="row">
-            <?php while($careers->fetch()){?>
-            <div class="col-md-6 col-xl-4">
-                <div class="singleCarer">
-                    <p class="f-big aperturaRegular letter-4"><?php echo $careers->field('title') ?></p>
-                    <p class="aperturaRegular twoLines letter-4 explain f-normal">
-                        <?php echo $careers->field('content') ?>
-                    </p>
-                    <button class="aperturaRegular border-0 commonButton" onclick="location.href = '<?php echo get_the_permalink($careers->field('id')) ?>'">
-                        Apply now
-                    </button>
-                </div>
-            </div>
-                <?php }?>
-        </div>
-        <button class="commonButton white mainColorBg mx-auto mt-20 border-0 moreCarers">
+            <?php while($careers->fetch()){
+                $GLOBALS['pod'] = $careers;
+                get_template_part('template-parts/career');
+            }
+            if($careers->total_found() > 6){
+        ?>
+        <button class="commonButton white mainColorBg border-0 mx-auto aperturaRegular" data-page="2" onclick="moreCareers.call(this)">
             More
         </button>
+    <?php } ?>
+        </div>
     </div>
 </section>
 <?php } ?>

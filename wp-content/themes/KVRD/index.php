@@ -21,18 +21,19 @@
 
 <!-- Slider Section -->
 
-<?php $about = pods('about',array('limit' => 5,'where' => "id != 88"));
+<?php $about = pods('about');
     if($about->total() > 0){
-?>
-        <section class="mrg-top-xg mrg-btm-xg allWords">
+?>        <section class="mrg-top-xg mrg-btm-xg allWords">
             <div class="myContainer position-relative common-slider-btn">
                 <div class="swiper-container home-first-slider ">
                     <div class="swiper-wrapper">
 
-                        <?php while($about->fetch()){ ?>
+                        <?php while($about->fetch()){
+                            if(get_field('exclude_from_slider',$about->field('id'))){continue;}
+                        ?>
                         <div class="swiper-slide">
                             <div class="imgWrapper">
-                                <img src="<?php echo get_the_post_thumbnail_url($about->field('id'), 'kv_knowledge_large'); ?>" alt="">
+                                <img src="<?php echo wp_get_attachment_image_url(get_field('slider_photo',$about->field('id')), 'kv_knowledge_large'); ?>" alt="">
                             </div>
                             <div class="emptyDiv">
                                 <div class="absoluteDiv">
@@ -43,7 +44,7 @@
                                         <p class="white desc letter-4">
                                             <?php echo $about->field('excerpt')?>
                                         </p>
-                                        <button class="mainColor f-xmd border-0 letter-4 p-3 whiteBg">
+                                        <button class="mainColor f-xmd border-0 letter-4 p-3 whiteBg" onclick="location.href='<?php echo get_the_permalink($about->field('id')) ?>'">
                                             READ MORE
                                         </button>
                                     </div>
@@ -78,7 +79,7 @@
                         <div class="smallHr mainColorBg d-none d-md-block"></div>
                         <div class="toChangePos">
                             <p class="f-md mainColor twoLines"><?php echo $pod->field('excerpt') ?></p>
-                            <button class="mainColor f-18 border-0 letter-4 p-3 whiteBg">
+                            <button class="mainColor f-18 border-0 letter-4 p-3 whiteBg" onclick="location.href='<?php echo get_the_permalink(187) ?>'">
                                 READ MORE
                             </button>
                         </div>

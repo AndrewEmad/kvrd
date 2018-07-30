@@ -179,7 +179,20 @@ $(window).ready(function () {
     })
 });
 $(document).ready(function(){
-$('.flexslider').flexslider({
+    $('.flexslider').flexslider({
        animation: "slide",
        loop: false,
-   });});
+    });
+    $('#historyBtn').on('click',function(e){
+        e.preventDefault();
+        var history = $('.singleEmployee').last().clone();
+        var cnt = parseInt(history.find('.counter').html())+1;
+        history.find('input[type="text"]').each(function(){
+            $(this).val('');
+            $(this).attr('name',$(this).attr('name').split(/[0-9]/)[0]+cnt);
+        });
+        history.find('.counter').html(cnt);
+        $('.toAppend').append(history);
+    });
+});
+

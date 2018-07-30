@@ -1,7 +1,7 @@
 <?php get_header() ?>
 <?php $photos = pods('photos',array('limit' => 4)) ?>
-<?php $videos = pods('videos',array('limit' => 5)) ?>
-
+<?php $videos = pods('videos',array('limit' => 20)) ;?>
+<?php $press = pods('press_release',array('limit'  =>  20)) ;?>
     <section class="forFixed mediaCenter">
         <div style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'kv_cover') ?>'); background-size: cover; background-position: right">
 
@@ -50,52 +50,8 @@
                 <div class="flexConatiner projects-slider">
                     <div class="popup-slider flexslider">
                         <div class="flex-viewport">
-                            <ul class="slides">
-                                <li class="position-relative galleryHover">
-                                    <div class="imgContainer">
-                                        <img src="images/videoCener.png" alt="">
-                                    </div>
-                                    <div class="mainColorBg centerDetails clearfix">
-                                    <span class="f-big float-left">
-                                        SIDEWALK
-                                    </span>
-                                        <p class="f-normal float-right">
-                                            <span class="current">1 / </span>
-                                            <span class="total"></span>
-                                            Photos
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="position-relative galleryHover">
-                                    <div class="imgContainer">
-                                        <img src="images/videoCener.png" alt="">
-                                    </div>
-                                    <div class="mainColorBg centerDetails clearfix">
-                                <span class="f-big float-left">
-                                    SIDEWALK
-                                </span>
-                                        <p class="f-normal float-right">
-                                            <span class="current"></span>
-                                            <span class="total"></span>
-                                            Photos
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="position-relative galleryHover">
-                                    <div class="imgContainer">
-                                        <img src="images/videoCener.png" alt="">
-                                    </div>
-                                    <div class="mainColorBg centerDetails clearfix">
-                                <span class="f-big float-left">
-                                    SIDEWALK
-                                </span>
-                                        <p class="f-normal float-right">
-                                            <span class="current"></span>
-                                            <span class="total"></span>
-                                            Photos
-                                        </p>
-                                    </div>
-                                </li>
+                            <ul class="slides" id="photos-slider">
+
                             </ul>
                         </div>
                     </div>
@@ -113,69 +69,33 @@
                 <div class="videosSlider flexslider">
                     <div class="flex-viewport">
                         <ul class="slides">
-                            <li class="position-relative galleryHover">
-                                <div class="imgContainer">
-                                    <img src="images/videoCener.png" alt="" >
-                                    <video controls="" autoplay class="videoCart">
-                                        <source src="images/valentine.mp4">
-                                    </video>
-                                </div>
-                                <div class="position-absolute subVideo">
-                                    <a href="javascript:void(0)" class="f-big">
-                                        <i class="far fa-play-circle"></i>
-                                    </a>
-                                </div>
-                                <div class="mainColorBg centerDetails clearfix">
-                                <span class="f-big float-left">
-                                    SIDEWALK
-                                </span>
-                                    <span class="f-normal float-right">
-                                    02:00
-                                </span>
-                                </div>
-                            </li>
-                            <li class="position-relative galleryHover">
-                                <div class="imgContainer">
-                                    <img src="images/videoCener.png" alt="" >
-                                    <video controls="" autoplay id="videoCart">
-                                        <source src="images/valentine.mp4">
-                                    </video>
-                                </div>
-                                <div class="position-absolute subVideo">
-                                    <a href="javascript:void(0)" class="f-big">
-                                        <i class="far fa-play-circle"></i>
-                                    </a>
-                                </div>
-                                <div class="mainColorBg centerDetails clearfix">
-                                <span class="f-big float-left">
-                                    SIDEWALK
-                                </span>
-                                    <span class="f-normal float-right">
-                                    02:00
-                                </span>
-                                </div>
-                            </li>
-                            <li class="position-relative galleryHover">
-                                <div class="imgContainer">
-                                    <img src="images/videoCener.png" alt="" >
-                                    <video controls="" autoplay class="videoCart">
-                                        <source src="images/valentine.mp4">
-                                    </video>
-                                </div>
-                                <div class="position-absolute subVideo">
-                                    <a href="javascript:void(0)" class="f-big">
-                                        <i class="far fa-play-circle"></i>
-                                    </a>
-                                </div>
-                                <div class="mainColorBg centerDetails clearfix">
-                                <span class="f-big float-left">
-                                    SIDEWALK
-                                </span>
-                                    <span class="f-normal float-right">
-                                    02:00
-                                </span>
-                                </div>
-                            </li>
+                            <?php while($videos->fetch()){ ?>
+                                <li class="position-relative galleryHover">
+                                    <div class="imgContainer">
+                                        <img src="<?php echo $videos->field('cover')['guid'] ?>" alt="" >
+                                        <video controls="" autoplay class="videoCart">
+                                            <source src="<?php echo $videos->field('video')['guid'] ?>">
+                                        </video>
+                                    </div>
+                                    <div class="position-absolute subVideo">
+                                        <a href="javascript:void(0)" class="f-big">
+                                            <i class="far fa-play-circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="mainColorBg centerDetails clearfix">
+                                    <span class="f-big float-left">
+                                        <?php echo $videos->field('title') ?>
+                                    </span>
+                                        <span class="f-normal float-right">
+                                        <?php
+                                        $id = pods_image_id_from_field($videos->field('video'));
+                                        $video_meta = get_post_meta( $id, '_wp_attachment_metadata', true );
+                                        echo $video_meta['length_formatted'];
+                                        ?>
+                                    </span>
+                                    </div>
+                                </li>
+                            <?php } ?>
                         </ul>
                     </div>
                 </div>
@@ -190,91 +110,28 @@
             </p>
             <div class="swiper-container pressRelease">
                 <div class="swiper-wrapper">
+                    <?php while($press->fetch()){?>
                     <div class="swiper-slide">
                         <div class="imgContainer centerImg">
-                            <img src="images/release1.png" alt="">
+                            <img src="<?php echo get_the_post_thumbnail_url($press->field('id'),'kv_press_release') ?>" alt="">
                         </div>
                         <div class="releaseContainer clearfix">
-                            <p class="f-md">Lorem Ipsum is </p>
-                            <p class="f-normal description">Lorem Ipsum is placeholder text commonly used in the graphic,
-                                print, and
-                                publishing industries for previewing layouts and visual mockups.</p>
-                            <button class="f-12 letter-4 p-3 commonReadMore mainColor">
+                            <p class="f-md">
+                                <?php
+                                $arr=array();
+                                preg_match_all('/\b([0-9A-Za-z]{2,})\b/', $press->field('title'), $arr);
+                                $keywords = array_slice(array_unique($arr[0]),0,3);
+                                echo join(' ', $keywords); ?>
+                            </p>
+                            <p class="f-normal description">
+                                <?php echo $press->field('excerpt'); ?>
+                            </p>
+                            <button class="f-12 letter-4 p-3 commonReadMore mainColor" onclick="location.href='<?php echo get_permalink($press->field('id')) ?>'">
                                 READ MORE
                             </button>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="imgContainer centerImg">
-                            <img src="images/release1.png" alt="">
-                        </div>
-                        <div class="releaseContainer clearfix">
-                            <p class="f-md">Lorem Ipsum is </p>
-                            <p class="f-normal description">Lorem Ipsum is placeholder text commonly used in the graphic,
-                                print, and
-                                publishing industries for previewing layouts and visual mockups.</p>
-                            <button class="f-12 letter-4 p-3 commonReadMore mainColor">
-                                READ MORE
-                            </button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="imgContainer centerImg">
-                            <img src="images/release1.png" alt="">
-                        </div>
-                        <div class="releaseContainer clearfix">
-                            <p class="f-md">Lorem Ipsum is </p>
-                            <p class="f-normal description">Lorem Ipsum is placeholder text commonly used in the graphic,
-                                print, and
-                                publishing industries for previewing layouts and visual mockups.</p>
-                            <button class="f-12 letter-4 p-3 commonReadMore mainColor">
-                                READ MORE
-                            </button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="imgContainer centerImg">
-                            <img src="images/release1.png" alt="">
-                        </div>
-                        <div class="releaseContainer clearfix">
-                            <p class="f-md">Lorem Ipsum is </p>
-                            <p class="f-normal description">Lorem Ipsum is placeholder text commonly used in the graphic,
-                                print, and
-                                publishing industries for previewing layouts and visual mockups.</p>
-                            <button class="f-12 letter-4 p-3 commonReadMore mainColor">
-                                READ MORE
-                            </button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="imgContainer centerImg">
-                            <img src="images/release1.png" alt="">
-                        </div>
-                        <div class="releaseContainer clearfix">
-                            <p class="f-md">Lorem Ipsum is </p>
-                            <p class="f-normal description">Lorem Ipsum is placeholder text commonly used in the graphic,
-                                print, and
-                                publishing industries for previewing layouts and visual mockups.</p>
-                            <button class="f-12 letter-4 p-3 commonReadMore mainColor">
-                                READ MORE
-                            </button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="imgContainer centerImg">
-                            <img src="images/release1.png" alt="">
-                        </div>
-                        <div class="releaseContainer clearfix">
-                            <p class="f-md">Lorem Ipsum is </p>
-                            <p class="f-normal description">Lorem Ipsum is placeholder text commonly used in the graphic,
-                                print, and
-                                publishing industries for previewing layouts and visual mockups.</p>
-                            <button class="f-12 letter-4 p-3 commonReadMore mainColor">
-                                READ MORE
-                            </button>
-                        </div>
-                    </div>
-
+                    <?php } ?>
                 </div>
             </div>
             <div class="swiper-button-prev forRelease">PREVIOUS
